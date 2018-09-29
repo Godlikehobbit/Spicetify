@@ -53,6 +53,8 @@
         const uriType = uriObj.type;
         if (uriType === "playlist") {
             playlistShuffle(contextURI);
+        } else if (uriType === "folder") {
+            playlistShuffle(contextURI);
         } else if (uriType === "collection") {
             collectionShuffle();
         } else if (uriType === "album") {
